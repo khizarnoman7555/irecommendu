@@ -1,0 +1,79 @@
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare — iRecommendU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="/" class="logo">i<span>Recommend</span>U</a>
+        <div class="nav-links">
+          <a href="/reviews">Reviews</a>
+          <a href="/compare">Compare</a>
+          <a href="/best-of">Best Of</a>
+          <a href="/about">About</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <span class="tag">Compare</span>
+        <h1>Side-by-Side Comparisons</h1>
+        <p class="subtitle">Can't decide between two products? We compare them head to head.</p>
+        <div class="grid">
+          <a href="/compare/bluehost-vs-hostinger" class="card">
+            <span class="card-tag">Hosting</span>
+            <h3>Bluehost vs Hostinger</h3>
+            <p>Which budget host wins on price, speed, and support in 2026?</p>
+            <span class="read-more">See comparison →</span>
+          </a>
+          <a href="/compare/shopify-vs-woocommerce" class="card">
+            <span class="card-tag">Ecommerce</span>
+            <h3>Shopify vs WooCommerce</h3>
+            <p>Hosted simplicity vs full control — which is right for your store?</p>
+            <span class="read-more">See comparison →</span>
+          </a>
+          <a href="/compare/notion-vs-obsidian" class="card">
+            <span class="card-tag">Productivity</span>
+            <h3>Notion vs Obsidian</h3>
+            <p>The best note-taking tools compared — features, pricing, and use cases.</p>
+            <span class="read-more">See comparison →</span>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2026 iRecommendU · <a href="/disclaimer">Affiliate Disclosure</a></p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #f9f9f7; color: #1a1a1a; }
+  nav { background: #fff; border-bottom: 1px solid #e8e8e4; padding: 0 24px; }
+  .nav-inner { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  .logo { font-size: 18px; font-weight: 600; text-decoration: none; color: #1a1a1a; }
+  .logo span { color: #2563eb; }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
+  .nav-links a:hover { color: #1a1a1a; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+  .tag { font-size: 11px; background: #eff6ff; color: #1d4ed8; padding: 3px 10px; border-radius: 20px; font-weight: 500; display: inline-block; margin-bottom: 14px; }
+  h1 { font-size: 32px; font-weight: 600; margin-bottom: 10px; color: #111; }
+  .subtitle { font-size: 16px; color: #555; margin-bottom: 36px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: #fff; border: 1px solid #e8e8e4; border-radius: 12px; padding: 20px; text-decoration: none; color: inherit; display: block; transition: border-color 0.2s; }
+  .card:hover { border-color: #93c5fd; }
+  .card-tag { font-size: 11px; background: #eff6ff; color: #1d4ed8; padding: 3px 10px; border-radius: 20px; font-weight: 500; display: inline-block; margin-bottom: 12px; }
+  .card h3 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 8px; }
+  .card p { font-size: 13px; color: #666; line-height: 1.6; margin-bottom: 14px; }
+  .read-more { font-size: 13px; color: #2563eb; font-weight: 500; }
+  footer { text-align: center; padding: 24px; font-size: 12px; color: #999; border-top: 1px solid #e8e8e4; margin-top: 48px; }
+  footer a { color: #999; text-decoration: underline; }
+  @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+</style>

@@ -1,17 +1,257 @@
 ---
-
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Honest reviews and comparisons of web hosting, SaaS tools, and software." />
+    <title>iRecommendU — Honest Tech Recommendations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-inner">
+        <a href="/" class="logo">i<span>Recommend</span>U</a>
+        <div class="nav-links">
+          <a href="/reviews">Reviews</a>
+          <a href="/compare">Compare</a>
+          <a href="/best-of">Best Of</a>
+          <a href="/about">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="badge">Honest tech recommendations</div>
+      <h1>Find the right tools,<br />without the guesswork</h1>
+      <p>In-depth reviews and comparisons of web hosting, SaaS tools, and software — so you can make smarter decisions.</p>
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards-section">
+      <div class="cards-grid">
+
+        <div class="card">
+          <span class="card-tag">Review</span>
+          <h3>Hostinger 2026 Review</h3>
+          <div class="stars">★★★★★</div>
+          <p>Is Hostinger still the best budget hosting? We tested speed, uptime, and support so you don't have to.</p>
+          <a href="/reviews/hostinger" class="card-link">Read review →</a>
+        </div>
+
+        <div class="card featured">
+          <span class="card-tag">Compare</span>
+          <h3>Bluehost vs Hostinger</h3>
+          <div class="stars">★★★★☆</div>
+          <p>Which hosting wins on price, speed, and ease of use for beginners in 2026?</p>
+          <a href="/compare/bluehost-vs-hostinger" class="card-link">See comparison →</a>
+        </div>
+
+        <div class="card">
+          <span class="card-tag">Best Of</span>
+          <h3>Best SaaS Tools 2026</h3>
+          <div class="stars">★★★★★</div>
+          <p>Top picks for productivity, ecommerce, and marketing — tested and ranked by our team.</p>
+          <a href="/best-of/saas-tools" class="card-link">View list →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPARE BAR -->
+    <section class="compare-bar">
+      <p class="compare-label">Popular comparisons</p>
+      <div class="compare-pills">
+        <a href="/compare/shopify-vs-woocommerce" class="pill">Shopify vs WooCommerce</a>
+        <a href="/compare/hostinger-vs-bluehost" class="pill">Hostinger vs Bluehost</a>
+        <a href="/compare/notion-vs-obsidian" class="pill">Notion vs Obsidian</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 iRecommendU · <a href="/disclaimer">Affiliate Disclosure</a> · All recommendations are independently tested</p>
+    </footer>
+
+  </body>
 </html>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f9f9f7;
+    color: #1a1a1a;
+  }
+
+  /* NAV */
+  nav {
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e4;
+    padding: 0 24px;
+  }
+  .nav-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .logo {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+  .logo span { color: #2563eb; }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #1a1a1a; }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 64px 24px 48px;
+    background: #ffffff;
+  }
+  .badge {
+    display: inline-block;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-size: 12px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    color: #111;
+  }
+  .hero p {
+    font-size: 16px;
+    color: #555;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* CARDS */
+  .cards-section {
+    padding: 40px 24px;
+    background: #f9f9f7;
+  }
+  .cards-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid #e8e8e4;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .card.featured { border: 2px solid #93c5fd; }
+  .card-tag {
+    font-size: 11px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .stars {
+    color: #f59e0b;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .card-link {
+    font-size: 13px;
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .card-link:hover { text-decoration: underline; }
+
+  /* COMPARE BAR */
+  .compare-bar {
+    background: #ffffff;
+    border-top: 1px solid #e8e8e4;
+    padding: 20px 24px;
+  }
+  .compare-label {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .compare-pills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .pill {
+    font-size: 13px;
+    padding: 7px 16px;
+    border: 1px solid #e8e8e4;
+    border-radius: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #f9f9f7;
+    transition: border-color 0.2s;
+  }
+  .pill:hover { border-color: #2563eb; color: #2563eb; }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #e8e8e4;
+  }
+  footer a { color: #999; text-decoration: underline; }
+
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    .cards-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 26px; }
+    .nav-links { gap: 16px; }
+  }
+</style>
